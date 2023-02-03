@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: max-content;
+    background-color: #062134;
+}
+.header h1 {
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    display: inline;
+    margin: 0 300px 0 0;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    align-self: center;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #BFBDC1;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar li a:hover {
+    background-color: #0b2e46;
+}
+.navbar li a:focus {
+    color: #A3320B;
+    border-bottom: 2px #BFBDC1 solid;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #001F29;
+    align-items: center;
+    background-image: url('static/monke.png');
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position-x: 60px;
+    background-position-y: bottom;
+}
+.search-and-filters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: end;
+    width: 665px;
+    height: 100px;
+    margin: 20px 0;
+}
+.search {
+    height: 32px;
+    background-color: #003459;
+    border-radius: 16px;
+    border-style: none;
+    padding-left: 10px;
+    color: #BFBDC1;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+}
+.search::placeholder {
+    color: #2c72a5;
+    font-family: 'Roboto Slab';
+    text-align: right;
+}
+.filter-by {
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    background-color: transparent;
+}
+.filters {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+}
+.fil {
+    width: 130px;
+    height: 27px;
+    background-color: #6B0504;
+    background-image: url(static/downtriang.svg);
+    background-position: right;
+    background-position-x: 100px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.main-content {
+    height: 500px;
+    overflow-y: scroll;
+}
+.main-content::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #A3320B;
+    width: 10px;
+}
+.proj-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("static/bubble.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    width: 600px;
+    padding-left: 65px;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.proj-name {
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    margin: 0;
+}
+.proj-type, .launch, .chain, .notes {
+    font-family: 'Roboto Slab', serif;
+    color: #BF3A0D;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer {
+    height: 100px;
+    background-color: #0b2e46;
+}
