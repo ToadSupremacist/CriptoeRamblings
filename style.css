@@ -2,46 +2,58 @@
 body {
     margin: 0;
     height: 100%;
-    background-color: #001F29;
+    background-color: #0b2e46;
 }
 .--visually-hidden {
     display: none;
 }
 .header {
+    background-color: #001F29;
     display: flex;
 }
-.CR-h1 a {
+.CR-h1 {
+    margin: 0 2vh 1vh 2vh;
+    height: 100%;
+}
+.CR-h1 a{
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
     font-size: 5vh;
-    display: inline;
     text-decoration: none;
 }
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
-    gap: 1vw;
     margin: 0;
+    align-content: center;
+}
+.navbar li {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .navbar li a {
     text-decoration: none;
-    height: inherit;
     color: #BFBDC1;
     font-size: 3vh;
+    padding: 20px;
+    height: 100%;
 }
 .navbar li a:hover {
-    background-color: #0b2e46;
-}
-.navbar li a:focus, .active {
     color: #A3320B;
     border-bottom: 0.5vh #BFBDC1 solid;
+}
+.navbar li a:focus, .active {
+    background-color: #0b2e46;
 }
 .main {
     display: flex;
     flex-direction: column;
-    background-color: #001F29;
     align-items: center;
     background-image: url('static/monke.png');
     background-repeat: no-repeat;
@@ -60,7 +72,7 @@ body {
 }
 .search {
     height: 5vh;
-    background-color: #003459;
+    background-color: #001F29;
     border-radius: 2vh;
     border-style: none;
     padding-left: 1vw;
