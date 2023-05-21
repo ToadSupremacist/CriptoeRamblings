@@ -4,6 +4,12 @@ body {
     height: 100%;
     background-color: #0b2e46;
 }
+a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #BFBDC1;
+}
 .--visually-hidden {
     display: none;
 }
@@ -38,11 +44,8 @@ body {
     align-items: center;
 }
 .navbar li a {
-    text-decoration: none;
-    color: #BFBDC1;
     font-size: 3vh;
     padding: 20px;
-    height: 100%;
 }
 .navbar li a:hover {
     color: #A3320B;
@@ -50,6 +53,17 @@ body {
 }
 .navbar li a:focus, .active {
     background-color: #0b2e46;
+}
+.big-top-banner {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 25vh;
+    width: 30vw;
+    border: #BFBDC1 solid 1px;
+}
+.big-top-banner img {
+    height: 100%;
+    width: 100%;
 }
 .main {
     display: flex;
@@ -81,7 +95,7 @@ body {
     font-family: 'Roboto Slab';
 }
 .search::placeholder {
-    color: #2c72a5;
+    color: #0b2e46;
     font-family: 'Roboto Slab';
     text-align: right;
 }
