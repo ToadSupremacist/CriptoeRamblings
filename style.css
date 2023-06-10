@@ -1,4 +1,5 @@
 /* GENERAL PAGE RULES */
+/*#001f29   #0b2e46*/
 body {
     margin: 0;
     height: 100%;
@@ -16,6 +17,7 @@ a {
 .header {
     background-color: #001F29;
     display: flex;
+    justify-content: space-between;
 }
 .CR-h1 {
     margin: 0 2vh 1vh 2vh;
@@ -53,6 +55,14 @@ a {
 .navbar li a:focus, .active {
     background-color: #0b2e46;
 }
+.links {
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+}
+.discord-link, .twitter-link {
+    width: 3vw;
+}
 .big-top-banner {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -63,12 +73,6 @@ a {
 .big-top-banner img {
     height: 100%;
     width: 100%;
-}
-.popular {
-    width: 50vw;
-    color: #BFBDC1;
-    font-family: 'Roboto Slab', serif;
-    font-size: 4vh;
 }
 .main {
     display: flex;
@@ -154,27 +158,27 @@ a {
     text-decoration: underline;
     background-color: #600907;
 }
+.popular {
+    width: 50vw;
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4vh;
+}
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(1fr);
-    grid-auto-flow: row;
-    gap: 0.5vw;
+    grid: auto-flow / repeat(3, 13vw);
     width: 50vw;
-    margin-left: -4vw
+    gap: 2vw;
 }
 .proj-card {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background-image: url("static/bubble.svg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain;
-    height: 30vh;
-    width: 30vh;
-    align-content: center;
-    justify-content: space-around;
-    margin-bottom: 1vh;
+    height: 12vw;
+    width: 16vw;
 }
 .proj-card:hover {
     cursor: pointer;
@@ -182,20 +186,29 @@ a {
 .proj-name {
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
-    font-size: 3vh;
-    margin: 0;
+    font-size: 2.5vh;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-right: 2vw;
 }
 .proj-type, .launch, .chain {
     font-family: 'Roboto Slab', serif;
     color: #BF3A0D;
     font-size: 2vh;
-    margin: 0;
+    margin-left: 4vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 2vw;
 }
 .notes {
     font-family: 'Roboto Slab', serif;
     color: #BF3A0D;
     font-size: 2vh;
-    margin: 0;
+    margin-left: 4vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 2vw;
 }
 
 /* CALENDAR PAGE RULES */
