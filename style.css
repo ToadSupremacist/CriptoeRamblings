@@ -18,6 +18,8 @@ a {
     background-color: #001F29;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 .CR-h1 {
     margin: 0 2vh 1vh 2vh;
@@ -48,17 +50,16 @@ a {
     font-size: 3vh;
     padding: 2vh 1vh 2vh 1vh;
 }
-.navbar li a:hover {
+.navbar li a:hover, .navbar li a:focus, .active {
+    background-color: #0b2e46;    
     color: #A3320B;
-    border-bottom: 0.5vh #BFBDC1 solid;
-}
-.navbar li a:focus, .active {
-    background-color: #0b2e46;
 }
 .links {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 1vw;
+    margin: 0;
 }
 .discord-link, .twitter-link {
     width: 3vw;
@@ -211,6 +212,24 @@ a {
     padding-right: 2vw;
 }
 
+/*CATALOGUE PAGE RULES*/
+
+.main-catalogue-content {
+    display: grid;
+    grid: auto-flow / 50vw;
+    width: 50vw;  
+}
+.proj-card-long {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("static/bubble-long.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15vw;
+    width: 50vw;
+}
+
 /* CALENDAR PAGE RULES */
 
 .calendar-top {
@@ -231,13 +250,13 @@ a {
     margin: 0;
 }
 .next-btn, .back-btn {
-    background-color: #A3320B;
+    background-color: #0b2e46;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    height: 30px;
-    width: 30px;
+    height: 2vw;
+    width: 2vw;
 }
 .next-btn {
     background-image: url(static/righttriang.svg);
