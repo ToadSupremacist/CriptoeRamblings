@@ -1,18 +1,23 @@
-//calendar script in progress, don't judge me pls
-import { install } from 'esinstall'
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+let currentMonth = currentDate.getMonth();
+let calendar = document.querySelector(".calendar-wrap");
+let days = document.querySelectorAll(".calend-day");
+let dates = document.querySelectorAll(".calendar-date");
+let projs = document.querySelectorAll(".date-projects");
+let monthName = document.querySelector(".month");
 
-await install(['json-calendar'], {
+function fillCalendar(year, month) {
+  let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let daysInMonth = new Date(year, month + 1, 0).getDate();
+  let firstDayOfMonth = new Date(year, month, 1).getDay();
 
-})
-import { JsonCalendar } from "json-calendar";
-const calendar = new JsonCalendar()
-const cal = document.querySelector(".calendar-wrap");
-let dayslist = calendar.weeks.map(w => w.map(d => d.day));
-
-for (i in Range(cal.children.length)){
-    cal.children[i].textContent = calendar.getDayName[i];
+  monthName.innerText = monthNames[month] + " " + year;
+  let dayCount = 1;
+  for (let i = firstDayOfMonth-1; dayCount <= daysInMonth; i++) {
+    dates[i].innerText = dayCount;
+    dayCount++;
+  }
 }
 
-function handleOnClick () {
-  calendar.changeMonth(2020, 8);
-}
+fillCalendar(currentYear, currentMonth);
