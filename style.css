@@ -92,7 +92,7 @@ a {
     align-content: end;
     width: 50vw;
     min-height: 10vh;
-    margin: 1vh 0;
+    padding: 5vh 0 5vh 0;
 }
 .search {
     height: 5vh;
@@ -109,11 +109,12 @@ a {
     font-family: 'Roboto Slab';
     text-align: right;
 }
-.filter-by {
+.filter-by, .filter label {
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
     background-color: transparent;
     font-size: 2vh;
+    text-align: center;
 }
 .filters {
     list-style: none;
@@ -121,43 +122,21 @@ a {
     gap: 1vw;
     padding-left: 0;
 }
-.fil {
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+.fil-select {
     width: 10vw;
     height: 4vh;
     background-color: #6B0504;
-    background-image: url(static/downtriang.svg);
-    background-position: right;
-    background-position-x: right;
-    background-size: 2vh;
-    background-repeat: no-repeat;
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
     font-size: 2vh;
     border-radius: 30px;
+    border-style: none;
     text-align: center;
     cursor: pointer;
-}
-.fil:focus {
-    background-color: #A3320B;
-}
-.dropdown-menu {
-    position: relative;
-    margin-top: 3px;
-    background-color: rgb(107, 5, 4);
-}
-.dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-}
-.dropdown-menu ul li {
-    width: 130px;
-    font-size: 12px;
-    padding-top: 5px;
-    font-family: 'Roboto Slab', serif;
-}
-.dropdown-menu ul li:hover {
-    text-decoration: underline;
-    background-color: #600907;
 }
 .popular {
     width: 50vw;
@@ -226,7 +205,7 @@ a {
     background-image: url("static/bubble-long.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 15vw;
+    height: 12vw;
     width: 50vw;
 }
 
@@ -235,38 +214,14 @@ a {
 .calendar-top {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 20vh;
     justify-content: flex-end;
-}
-.month-swt {
-    display: flex;
-    width: 700px;
-    justify-content: space-around;
 }
 .month {
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
-    font-size: 30px;
+    font-size: 3vh;
     margin: 0;
-}
-.next-btn, .back-btn {
-    background-color: #0b2e46;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    height: 2vw;
-    width: 2vw;
-}
-.next-btn {
-    background-image: url(static/righttriang.svg);
-    margin: auto;
-    cursor: pointer;
-}
-.back-btn {
-    background-image: url(static/lefttriang.svg);
-    margin: auto;
-    cursor: pointer;
 }
 .weekdays {
     display: grid;
@@ -278,7 +233,7 @@ a {
 .weekdays p {
     color: #BFBDC1;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 2vh;
     margin-bottom: 0;
     background-color: #001F29;
 }

@@ -10,17 +10,17 @@ let dk = document.querySelector(".kyc .dropdown-menu");
 let calen = document.querySelector(".calendar-wrap")
 
 /* dropdown menus toggle thingies. 
-i know i could've just used <select> but no. i forgot why not, actually.*/
-// chain.addEventListener("click", ()=> {
-//     dc.classList.toggle("--visually-hidden");
-//     focus(chain);
-// });
-// type.addEventListener("click", ()=> {
-//     dt.classList.toggle("--visually-hidden");
-// });
-// kyc.addEventListener("click", ()=> {
-//     dk.classList.toggle("--visually-hidden");
-// });
+// i know i could've just used <select> but no. i forgot why not, actually.*/
+chain.addEventListener("click", ()=> {
+    dc.classList.toggle("--visually-hidden");
+    focus(chain);
+});
+type.addEventListener("click", ()=> {
+    dt.classList.toggle("--visually-hidden");
+});
+kyc.addEventListener("click", ()=> {
+    dk.classList.toggle("--visually-hidden");
+});
 //////////////////////////
 main.addEventListener("click", ()=> {
     if (!dk.classList.contains("--visually-hidden")){

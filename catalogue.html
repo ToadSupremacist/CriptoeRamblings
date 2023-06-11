@@ -5,7 +5,6 @@
         <title>Criptoe Ramblings</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
         <link rel="icon" href="static/monke.png">
     </head>
     <body>
@@ -27,48 +26,48 @@
                 <input autocomplete="off" class="search" type="search" placeholder="ooh ohh ah ah...">
                 <ul class="filters">
                     <li class="filter-by">Filter by:</li>
-                    <li class="fil chain-filter">Chain
-                        <div class="dropdown-menu --visually-hidden">
-                            <ul>
-                                <li>ETH</li>
-                                <li>AVAX</li>
-                                <li>BSC</li>
-                                <li>FTM</li>
-                                <li>POLYGON</li>
-                                <li>Other...</li>
-                            </ul>
-                        </div>
+                    <li class="filter">
+                        <label for="chain">Chain</label>
+                        <select class="fil-select" name="chain" id="chain">
+                            <option value="all">All</option>
+                            <option value="eth">Ethereum</option>
+                            <option value="avax">Avalanche</option>
+                            <option value="bsc">BSC</option>
+                            <option value="ftm">Fantom</option>
+                            <option value="poly">Polygon</option>
+                            <option value="other">Other</option>
+                        </select>
                     </li>
-                    <li class="fil type">Type
-                        <div class="dropdown-menu --visually-hidden">
-                            <ul>
-                                <li>Tombfork</li>
-                                <li>NFT</li>
-                                <li>Shitcoin</li>
-                                <li>Node</li>
-                            </ul>
-                        </div>
+                    <li class="filter">
+                        <label for="type">Type</label>
+                        <select class="fil-select" name="type" id="type">
+                            <option value="all">All</option>
+                            <option value="tomb">Tombfork</option>
+                            <option value="node">Node</option>
+                            <option value="shit">Shitcoin</option>
+                            <option value="nft">NFT</option>
+                            <option value="other">Other</option>
+                        </select>
                     </li>
-                    <li class="fil kyc">KYC by
-                        <div class="dropdown-menu --visually-hidden">
-                            <ul>
-                                <li>Ape O'Cock</li>
-                                <li>um what other kyc companies are there</li>
-                            </ul>
-                        </div>
+                    <li class="filter">
+                        <label for="kyc">KYC</label>
+                        <select class="fil-select" name="kyc" id="kyc">
+                            <option value="all">All</option>
+                            <option value="tomb">Ape O'Clock</option>
+                            <option value="other">Other</option>
+                        </select>
                     </li>
                 </ul>
             </div>
             <div class="main-catalogue-content">
                 <div class="proj-card-long">
+                    <p class="proj-name">PeePee PooPoo Finance</p>
                     <div>
-                        <p class="proj-name">PeePee PooPoo Finance</p>
                         <p class="proj-type">Shitcoin</p>
-                    </div>
-                    <div>
                         <p class="chain">BSC</p>
                         <p class="launch">Launch: soon</p>
                     </div>
+                    <p class="proj-details"></p>
                 </div>
                 <div class="proj-card-long">
                     <p class="proj-name">Name</p>
@@ -186,9 +185,6 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
-
-        </footer>
         <script src="script.js"></script>
     </body>
 </html>
