@@ -172,16 +172,7 @@ a {
     margin-bottom: 0;
     padding-right: 2vw;
 }
-.proj-type, .launch, .chain {
-    font-family: 'Roboto Slab', serif;
-    color: #BF3A0D;
-    font-size: 2vh;
-    margin-left: 4vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-right: 2vw;
-}
-.notes {
+.stats {
     font-family: 'Roboto Slab', serif;
     color: #BF3A0D;
     font-size: 2vh;
@@ -208,7 +199,36 @@ a {
     height: 12vw;
     width: 50vw;
 }
-
+.lc-proj-name {
+    color: #BFBDC1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-right: 2vw;
+    width: 30%;
+}
+.lc-stats {
+    font-family: 'Roboto Slab', serif;
+    color: #BF3A0D;
+    font-size: 2vh;
+    margin-left: 4vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 2vw;
+    width: 30%;
+}
+.proj-details {
+    width: 55%;
+    font-family: 'Roboto Slab', serif;
+    color: #BF3A0D;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    padding-right: 2vw;
+}
+.proj-details a img{
+    height: 1vw;
+}
 /* CALENDAR PAGE RULES */
 
 .calendar-top {
